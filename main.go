@@ -1,5 +1,3 @@
-// student-style-comments.go
-
 package main
 
 import (
