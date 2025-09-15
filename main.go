@@ -60,7 +60,6 @@ func main() {
 			log.Fatalf("错误：创建UDP发送连接失败: %v", err)
 		}
 
-		// 对提供的TCP示例模仿：
 		// 1. 将标准的 net.PacketConn 包装成 ipv4.PacketConn
 		// 2. 这样我们就能获得对IP协议头部的控制权，特别是设置TTL
 		p := ipv4.NewPacketConn(sendSocket)
